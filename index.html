@@ -3,201 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I1achi | Portfolio</title>
-    <meta
-      name="description"
-      content="Personal portfolio website for I1achi."
-    />
+    <meta name="description" content="I1achi — Data Analyst, Data Science and Machine Learning enthusiast with Android frontend development experience." />
+    <title>I1achi | Data Analyst & ML Enthusiast</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
     <header class="site-header">
-      <nav class="nav container">
-        <div class="logo">I1achi</div>
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="logo" href="#top" aria-label="Back to top">I1achi</a>
         <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+          <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero">
         <div class="container hero-content">
-          <div class="hero-text">
-            <p class="eyebrow">Hello, I'm</p>
+          <div class="hero-text reveal">
+            <p class="eyebrow">Data • Intelligence • Innovation</p>
             <h1>I1achi</h1>
-            <h2>Web Developer & Creative Technologist</h2>
-            <p>
-              I design and build modern, responsive digital experiences that
-              combine usability, performance, and clean aesthetics.
-            </p>
-            <div class="hero-actions">
-              <a class="btn primary" href="#projects">View Projects</a>
-              <a class="btn secondary" href="#contact">Contact Me</a>
-            </div>
+            <h2><span class="typing-text">Data Analyst</span><span class="cursor">|</span></h2>
+            <p>I turn data into clear insights and intelligent solutions. I work across Data Analytics, Data Science, and Machine Learning, with hands-on frontend development experience in Android Studio.</p>
+            <div class="hero-actions"><a class="btn primary" href="#projects">Explore my work <span>↓</span></a><a class="btn secondary" href="#contact">Let's connect</a></div>
           </div>
-          <div class="hero-card">
-            <div class="profile-badge">Available for work</div>
-            <div class="mini-card">
-              <span>Frontend</span>
-              <strong>HTML • CSS • JavaScript</strong>
-            </div>
-            <div class="mini-card">
-              <span>Design</span>
-              <strong>UI/UX • Responsive Design</strong>
-            </div>
-            <div class="mini-card">
-              <span>Workflow</span>
-              <strong>GitHub • VS Code • Figma</strong>
-            </div>
+          <div class="hero-card tilt reveal" data-tilt>
+            <div class="profile-badge"><span class="status-dot"></span> Data Analyst · Since Dec 2024</div>
+            <div class="mini-card"><span>Focus</span><strong>Analytics • DS • ML</strong></div>
+            <div class="mini-card"><span>Development</span><strong>Android Studio • Frontend</strong></div>
+            <div class="mini-card"><span>Approach</span><strong>Curious · Analytical · Impact-driven</strong></div>
           </div>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">About me</p>
-            <h3>Building thoughtful digital experiences</h3>
-          </div>
+          <div class="section-heading reveal"><p class="eyebrow">About me</p><h3>From raw data to meaningful decisions</h3></div>
           <div class="about-grid">
-            <div class="about-card">
-              <p>
-                I’m a developer focused on crafting polished web experiences with
-                clean code, intuitive interfaces, and strong attention to detail.
-                I enjoy turning ideas into accessible, user-friendly products.
-              </p>
-            </div>
-            <div class="stats">
-              <div class="stat">
-                <strong>2+</strong>
-                <span>Years learning & building</span>
-              </div>
-              <div class="stat">
-                <strong>10+</strong>
-                <span>Projects</span>
-              </div>
-              <div class="stat">
-                <strong>100%</strong>
-                <span>Focus on quality</span>
-              </div>
-            </div>
+            <div class="about-card reveal"><p>I’m a Data Analyst working since December 2024, passionate about discovering patterns, communicating insights, and building data-informed solutions. My background in frontend development with Android Studio gives me a product-minded perspective: I care about both what the data says and how people experience the result.</p></div>
+            <div class="stats"><div class="stat reveal"><strong>Dec ’24</strong><span>Started as Data Analyst</span></div><div class="stat reveal"><strong>DA</strong><span>Current role</span></div><div class="stat reveal"><strong>DS/ML</strong><span>Growing expertise</span></div></div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section alt">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h3>Selected work</h3>
-          </div>
+      <section id="experience" class="section alt"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Experience</p><h3>My professional journey</h3></div><div class="timeline"><article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-date">December 2024 — Present</div><h4>Data Analyst</h4><p>Working with data to uncover actionable insights, support business decisions, and improve reporting and analytical workflows.</p><div class="tag-row"><span>Data Analysis</span><span>Reporting</span><span>Insights</span></div></article><article class="timeline-item reveal"><span class="timeline-dot"></span><div class="timeline-date">Previous experience</div><h4>Frontend Development · Android Studio</h4><p>Built experience creating user-facing interfaces and applying frontend development principles in Android Studio.</p><div class="tag-row"><span>Android Studio</span><span>Frontend</span><span>UI</span></div></article></div></div></section>
 
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-image gradient-1"></div>
-              <div class="project-content">
-                <h4>Portfolio Website</h4>
-                <p>
-                  A responsive personal portfolio designed to showcase projects,
-                  services, and contact information.
-                </p>
-                <ul>
-                  <li>Responsive layout</li>
-                  <li>Modern UI design</li>
-                  <li>Performance focused</li>
-                </ul>
-              </div>
-            </article>
+      <section id="projects" class="section"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Projects</p><h3>Selected work</h3></div><div class="project-grid">
+        <article class="project-card tilt reveal" data-tilt><div class="project-image gradient-1"><span>01</span></div><div class="project-content"><h4>Analytics Dashboard</h4><p>A clear, interactive dashboard concept for turning business metrics into decisions.</p><ul><li>Data storytelling</li><li>Visual reporting</li><li>Actionable insights</li></ul></div></article>
+        <article class="project-card tilt reveal" data-tilt><div class="project-image gradient-2"><span>02</span></div><div class="project-content"><h4>Machine Learning Exploration</h4><p>An analytical workflow exploring data preparation, patterns, and predictive modelling.</p><ul><li>Data preprocessing</li><li>Feature exploration</li><li>Model evaluation</li></ul></div></article>
+        <article class="project-card tilt reveal" data-tilt><div class="project-image gradient-3"><span>03</span></div><div class="project-content"><h4>Android Frontend Experience</h4><p>A user-focused interface project developed with Android Studio and frontend principles.</p><ul><li>UI development</li><li>Responsive layouts</li><li>User experience</li></ul></div></article>
+      </div></div></section>
 
-            <article class="project-card">
-              <div class="project-image gradient-2"></div>
-              <div class="project-content">
-                <h4>Business Landing Page</h4>
-                <p>
-                  A conversion-focused landing page for a brand or startup with a
-                  modern visual language and clear structure.
-                </p>
-                <ul>
-                  <li>Brand-focused design</li>
-                  <li>Clear CTA sections</li>
-                  <li>Clean mobile UX</li>
-                </ul>
-              </div>
-            </article>
+      <section id="skills" class="section alt"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Toolkit</p><h3>Skills & technologies</h3></div><div class="skills-grid"><span class="skill reveal">Data Analysis</span><span class="skill reveal">Data Science</span><span class="skill reveal">Machine Learning</span><span class="skill reveal">Python</span><span class="skill reveal">SQL</span><span class="skill reveal">Data Visualization</span><span class="skill reveal">Android Studio</span><span class="skill reveal">Frontend Development</span><span class="skill reveal">HTML & CSS</span><span class="skill reveal">GitHub</span></div></div></section>
 
-            <article class="project-card">
-              <div class="project-image gradient-3"></div>
-              <div class="project-content">
-                <h4>App UI Concept</h4>
-                <p>
-                  A concept interface for a digital product, emphasizing usability,
-                  clarity, and intuitive interactions.
-                </p>
-                <ul>
-                  <li>UX thinking</li>
-                  <li>Interactive layout</li>
-                  <li>Scalable components</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Skills</p>
-            <h3>Tools & technologies</h3>
-          </div>
-
-          <div class="skills-grid">
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>GitHub</span>
-            <span>Responsive Design</span>
-            <span>UI/UX</span>
-            <span>Figma</span>
-            <span>Bootstrap</span>
-            <span>Tailwind</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Contact</p>
-            <h3>Let’s build something great</h3>
-          </div>
-
-          <div class="contact-box">
-            <a href="mailto:you@example.com">you@example.com</a>
-            <a href="https://github.com/I1achi" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
-        </div>
-      </section>
+      <section id="contact" class="section contact-section"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Contact</p><h3>Let’s turn data into impact</h3></div><div class="contact-box reveal"><a href="mailto:you@example.com">you@example.com</a><a href="https://github.com/I1achi" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>© 2026 I1achi. All rights reserved.</p>
-      </div>
-    </footer>
-
+    <footer class="site-footer"><div class="container"><p>© 2026 I1achi. All rights reserved.</p></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
